@@ -38,7 +38,7 @@ public void sierpinski(double x, double y, double len,int times)
         else{
             sierpinski(x,y,len/2,times-1);
             sierpinski(x+len/2,y,len/2,times-1);
-            sierpinski(x+len/4,y+len*Math.sqrt(0.75),len/2,times-1);
+            sierpinski(x+len/4,y+len*Math.sqrt(0.75)/2,len/2,times-1);
         }
             
 }
