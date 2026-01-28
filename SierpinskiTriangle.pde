@@ -21,7 +21,7 @@ public void keyPressed(){
         sierpinski(0,0,500,steps);
         
     }
-    if(KEYCODE==DOWN){
+    if(keyCode==DOWN){
         if(steps>1){
           steps--;
           background(67,67,67);
