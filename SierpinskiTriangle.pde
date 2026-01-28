@@ -39,7 +39,7 @@ public void sierpinski(double x, double y, double len,int times)
         else{
             sierpinski(x,y,len/2,times-1);
             sierpinski(x+len/2,y,len/2,times-1);
-            sierpinski(x+len*mouseX/Math.sqrt(mouseY*mouseY+mouseX*mouseX)/2,y+len*mouseY/Math.sqrt(mouseY*mouseY+mouseX*mouseX)/2,len/2,times-1);
+            sierpinski(x+len*mouseX/1000,y+len*mouseY/1000,len/2,times-1);
         }
             
 }
