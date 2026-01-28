@@ -34,12 +34,12 @@ public void keyPressed(){
 public void sierpinski(double x, double y, double len,int times) 
 {
         if(times<=1){
-            triangle(x,y,x+len,y,x+len*mouseX/Math.sqrt(mouseY**2+mouseX**2),y+len*mouseY/Math.sqrt(mouseY**2+mouseX**2);
+            triangle(x,y,x+len,y,x+len*mouseX/Math.sqrt(mouseY*mouseY+mouseX*mouseX),y+len*mouseY/Math.sqrt(mouseY*mouseY+mouseX*mouseX));
         }
         else{
             sierpinski(x,y,len/2,times-1);
             sierpinski(x+len/2,y,len/2,times-1);
-            sierpinski(x+len*mousex/Math.sqrt(mouseY**2+mouseX**2)/2,y+len*mouseY/Math.sqrt(mouseY**2+mouseX**2)/2,len/2,times-1);
+            sierpinski(x+len*mouseX/Math.sqrt(mouseY*mouseY+mouseX*mouseX)/2,y+len*mouseY/Math.sqrt(mouseY*mouseY+mouseX*mouseX)/2,len/2,times-1);
         }
             
 }
