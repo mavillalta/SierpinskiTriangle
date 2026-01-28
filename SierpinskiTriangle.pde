@@ -34,7 +34,7 @@ public void sierpinski(double x, double y, double len,int times)
 {
         ////Math.sqrt(mouseY*mouseY+mouseX*mouseX)/Math.sqrt(mouseY*mouseY+mouseX*mouseX)
         if(times<=1){
-            triangle(x,y,x+len,y,x+len*mouseX,y+len*mouseY);
+            triangle(x,y,x+len,y,x+len*mouseX/500,y+len*mouseY/500);
         }
         else{
             sierpinski(x,y,len/2,times-1);
