@@ -3,8 +3,6 @@ double angle=Math.PI/3;
 public void setup()
 {
     size(500,500);
- 
-
 }
 public void draw()
 {
@@ -34,8 +32,9 @@ public void keyPressed(){
 }
 public void sierpinski(double x, double y, double len,int times) 
 {
+        ////Math.sqrt(mouseY*mouseY+mouseX*mouseX)/Math.sqrt(mouseY*mouseY+mouseX*mouseX)
         if(times<=1){
-            triangle(x,y,x+len,y,x+len*mouseX/Math.sqrt(mouseY*mouseY+mouseX*mouseX),y+len*mouseY/Math.sqrt(mouseY*mouseY+mouseX*mouseX));
+            triangle(x,y,x+len,y,x+len*mouseX,y+len*mouseY);
         }
         else{
             sierpinski(x,y,len/2,times-1);
