@@ -17,11 +17,14 @@ public void mouseDragged()//optional
 public void keyPressed(){
     if(keyCode==UP){
         steps++;
+        background(67,67,67);
         sierpinski(0,0,500,steps);
+        
     }
     if(KEYCODE==DOWN){
         if(steps>1){
           steps--;
+          background(67,67,67);
           sierpinski(0,0,500,steps);
         }
     }
