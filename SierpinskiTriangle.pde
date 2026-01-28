@@ -1,4 +1,5 @@
 int steps=8;
+double angle=Math.PI/3;
 public void setup()
 {
     size(500,500);
@@ -33,12 +34,12 @@ public void keyPressed(){
 public void sierpinski(double x, double y, double len,int times) 
 {
         if(times<=1){
-            triangle(x,y,x+len,y,x+len/2,y+len*Math.sqrt(0.75));
+            triangle(x,y,x+len,y,x+len*mousex/Math.sqrt(mouseY**2+mouseX**2),y+len*mouseY/Math.sqrt(mouseY**2+mouseX**2);
         }
         else{
             sierpinski(x,y,len/2,times-1);
             sierpinski(x+len/2,y,len/2,times-1);
-            sierpinski(x+len/4,y+len*Math.sqrt(0.75)/2,len/2,times-1);
+            sierpinski(x+len*mousex/Math.sqrt(mouseY**2+mouseX**2)/2,y+len*mouseY/Math.sqrt(mouseY**2+mouseX**2)/2,len/2,times-1);
         }
             
 }
