@@ -8,6 +8,7 @@ public void setup()
 }
 public void draw()
 {
+    background (86,86,86);
     sierpinski(0,0,500,steps);
 }
 public void mouseDragged()//optional
