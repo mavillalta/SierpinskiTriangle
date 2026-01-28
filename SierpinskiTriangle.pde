@@ -25,7 +25,7 @@ public void keyPressed(){
     if(keyCode==DOWN){
         if(steps>1){
           steps--;
-          background(67,67,67);
+          background(69,69,69);
           sierpinski(0,0,500,steps);
         }
     }
@@ -34,7 +34,7 @@ public void keyPressed(){
 public void sierpinski(double x, double y, double len,int times) 
 {
         if(times<=1){
-            triangle(x,y,x+len,y,x+len*mousex/Math.sqrt(mouseY**2+mouseX**2),y+len*mouseY/Math.sqrt(mouseY**2+mouseX**2);
+            triangle(x,y,x+len,y,x+len*mouseX/Math.sqrt(mouseY**2+mouseX**2),y+len*mouseY/Math.sqrt(mouseY**2+mouseX**2);
         }
         else{
             sierpinski(x,y,len/2,times-1);
