@@ -1,8 +1,9 @@
+int steps=8;
 public void setup()
 {
     size(500,500);
  
-    int steps=8;
+
 }
 public void draw()
 {
@@ -13,12 +14,12 @@ public void mouseDragged()//optional
 
 }
 
-public void keypressed(){
-    if(KEYCODE==UP){
+public void keyPressed(){
+    if(keyCode==UP){
         steps++;
         sierpinski(0,0,500,steps);
     }
-    if(KEYCODE==UP){
+    if(KEYCODE==DOWN){
         if(steps>1){
           steps--;
           sierpinski(0,0,500,steps);
@@ -28,8 +29,8 @@ public void keypressed(){
 }
 public void sierpinski(double x, double y, double len,int times) 
 {
-        if(times==1){
-            triangle(x,y,x+len,y,x+len/2,y+len*Math.sqrt(3)/2;
+        if(times<=1){
+            triangle(x,y,x+len,y,x+len/2,y+len*Math.sqrt(3)/2);
         }
         else{
             sierpinski(x,y,len/2,times-1);
